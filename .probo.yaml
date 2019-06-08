@@ -10,7 +10,7 @@ steps:
     script:
       - apt-get install -y software-properties-common imagemagick
       - apt-add-repository -y ppa:brightbox/ruby-ng
-      - apt-get update && apt-get install -y wget
+      - apt-get update
   - name: Install Ruby 2.3
     plugin: Script
     script:
