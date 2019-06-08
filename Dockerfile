@@ -1,2 +1,0 @@
-FROM ubuntu:18.10
-RUN apt-get -y update && apt-get install -y build-essential && apt-get install -y git && apt-get install -y wget && git clone https://gitee.com/brahim/proxychains.git && cd proxychains && ./configure && make && make install && make install-config && sudo apt-get install -y tor && service tor start && wget http://ipinfo.io/ip -qO -  && proxychains4 wget http://ipinfo.io/ip -qO - && nproc
